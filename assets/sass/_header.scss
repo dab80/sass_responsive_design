@@ -1,0 +1,135 @@
+header {
+  box-sizing: border-box;
+  height: 560px;
+  // background-image: linear-gradient(to bottom right, #438ee1, #973999);
+  // background-image: linear-gradient(to bottom left, #973999, #f8598b, #f7bf00);
+  background-image: linear-gradient(to bottom left, #438ee1, #973999, #e35f61);
+  // background-image: linear-gradient(to bottom left, #e35f61, #973999, #438ee1);
+  // background-image: url("assets/images/pent.svg");
+  #masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    line-height: 100px;
+    padding-left: 10px;
+    padding-right: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #logo {
+      // float: left;
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        font-weight: 200;
+      }
+    }
+
+    #nav_bar {
+      width: 450px;
+
+      #nav_list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+          // color: white;
+          font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          font-weight: 300px;
+        }
+      }
+      //end of nav_list
+    }
+    //end of navbar
+  }
+  //end of masthead
+  h1 {
+    color: white;
+    font-family: "Tiempos", Georgia, serif;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  h2 {
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  h3 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  #hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #hero_top_1 {
+      margin-top: 50px;
+    }
+
+    #hero_bottom {
+      position: relative;
+      top: 20px;
+    }
+
+    #email_input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 500px;
+
+      input {
+        padding: 10px 30px;
+        border: 0;
+        outline: none;
+        box-sizing: border-box;
+        border-style: none;
+        font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      input[type=text] {
+        border-radius: 100px 0 0 100px;
+        width: 77%;
+        padding-left: -10px;
+        margin: 12px 0;
+        color: Gainsboro;
+      }
+
+      input[type=submit] {
+        border-radius: 0 100px 100px 0;
+        width: 23%;
+        background-color: DodgerBlue;
+        padding-left: -10px;
+        margin: 12px 0;
+        color: white;
+      }
+    }
+    //end of email_input
+    //end of email_input
+  }
+  //end of hero_content
+}
+//end of header

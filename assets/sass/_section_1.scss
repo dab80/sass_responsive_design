@@ -1,0 +1,151 @@
+$outer_tab_font: lightblue;
+$inner_tab_font: white;
+$font_tiempos: "Tiempos", Plantin, "Galaxie CopernicusGeorgia", serif;
+
+.section_1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  h1 {
+    font-size: 56px;
+    color: DodgerBlue;
+    font-weight: 800;
+    font-family: $font_tiempos;
+    border-bottom: 1px dashed DodgerBlue;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: DodgerBlue;
+    font-weight: 800;
+    font-family: $font_tiempos;
+  }
+
+  h5 {
+    font-size: 14px;
+    color: gray;
+  }
+
+  #white_sheet {
+    margin: -65px;
+    background-color: white;
+    width: 880px;
+    height: 1080px;
+    border-style: solid;
+    border: 0.5px;
+    border-radius: 4px;
+
+    #tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 100px;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 200px;
+        border-color: rgb(67, 142, 225);
+        border-style: solid;
+        border-width: 2px;
+      }
+
+      .outer_left {
+        color: $outer_tab_font;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .outer_right {
+        color: $outer_tab_font;
+        border-radius: 0 4px 4px 0;
+      }
+
+      #inner_tab {
+        color: $inner_tab_font;
+        background-color: DodgerBlue;
+      }
+    }
+    //end of tabs
+    #price {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+
+      #price_left {
+        h5 {
+          position: relative;
+          top: 70px;
+          left: -10px;
+        }
+        color: gray;
+      }
+      // end of price
+      #price_right {
+        h3 {
+          position: relative;
+          top: 30px;
+          left: 5px;
+        }
+      }
+    }
+    // end of price
+    #inc_features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .matrix_1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 13px;
+        color: gray;
+      }
+    }
+
+    .icon_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 800px;
+    }
+    @media (max-width: 800px) {
+      .icon_row {
+        width: 400px;
+      }
+    }
+
+    .icon_pic_n_text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 150px;
+    }
+
+    .icon_pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px;
+    }
+  }
+  //end of white_sheet
+  @media (max-width: 800px) {
+    #white_sheet {
+      width: 480px;
+    }
+  }
+}
+//end of section_1

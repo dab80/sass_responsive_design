@@ -1,0 +1,30 @@
+// setup:
+// cd $HOME/Desktop/sass_responsive_design/assets
+// sass --watch sass:stylesheets
+
+@import "header.scss";
+@import "section_1.scss";
+@import "section_heading.scss";
+@import "section_left_right.scss";
+
+$font_tiempos: "Tiempos", Plantin, "Galaxie CopernicusGeorgia", serif;
+$font_whitney: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin-top: -100;
+}
+
+body {
+  // font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+  font-family: $font_whitney;
+  // background-image: linear-gradient(to bottom left, #438ee1, #973999, #e35f61);
+  // background-image: linear-gradient(to bottom left, #e35f61, #973999, #438ee1);
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+div {
+  // border: dashed 1px black;
+
+}

@@ -1,0 +1,45 @@
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center; //contains 2 card_col
+
+  #card_table {
+    h2 {
+      font-size: 24px;
+      color: DodgerBlue;
+      font-weight: 600;
+      font-family: $font_tiempos;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #606060;
+      font-weight: 200;
+      font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+      margin-top: -20px;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    //contains 3 cards
+    .card_col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      padding-right: 10px;
+      margin-bottom: 15px;
+
+      .card {
+        padding-left: 25px;
+        padding-right: 25px;
+      margin: 20px;
+        background-color: white;
+      }
+    }
+  }
+}
+//end of card_table

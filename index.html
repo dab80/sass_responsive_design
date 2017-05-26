@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Using Sass and flexbox to duplicate a site</title>
+
+  <!-- My Style Sheet -->
+  <link rel="stylesheet" href="assets/stylesheets/common.css">
+</head>
+
+<body>
+
+  <!-- ################ Styled with _header.scss ################ -->
+  <header>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div id="masthead">
+
+      <div id="logo">
+        <a href="#">fullstory</a>
+      </div>
+
+      <div id="nav_bar">
+        <ul id="nav_list">
+          <li class="nav_link"><a href="#">Features</a></li>
+          <li class="nav_link"><a href="#">Pricing</a></li>
+          <li class="nav_link"><a href="#">Customers</a></li>
+          <li class="nav_link"><a href="#">Blog</a></li>
+          <li class="nav_link"><a href="#">Support</a></li>
+          <li class="nav_link"><a href="#">Log In</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- <img src="assets/images/pent.svg" alt=""> -->
+    <div id="hero_content">
+
+      <div id="hero_top_1">
+        <h1>Choose your own adventure.</h1>
+      </div>
+      <div class="hero_top_2">
+
+        <h2>Build a plan that's just right for your business.</h2>
+      </div>
+
+      <div id="email_input">
+        <input type="text" name="work_email" placeholder="Work Email Address">
+        <input type="submit" value="GO">
+      </div>
+
+      <div id="hero_bottom">
+        <h3>Enter your work email above to access your <span>fully-loaded</span> 14-day FullStory Pro trial.</h3>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ################ Styled with _section_1.scss ################ -->
+  <section class="section_1">
+    <div id="white_sheet">
+
+      <!-- ##### top of section  containing 3 items ##### -->
+      <!-- start of 3 items -->
+      <!-- ### Item 1 ###   -->
+      <div id="top_white_sheet">
+        <div id="tabs">
+
+          <div class="outer_left">
+            <h2>FREE</h2>
+          </div>
+
+          <div id="inner_tab">
+            <h2>PROFESSIONAL</h2>
+          </div>
+
+          <div class="outer_right">
+            <h2>ENTERPRISE</h2>
+          </div>
+
+        </div>
+        <!-- end of tabs -->
+        <!-- ### Item 2 ###   -->
+        <div id="price">
+
+          <div id="price_left">
+            <h5>FROM  </h5>
+
+          </div>
+
+          <div class="price_middle">
+            <h1>$199</h1>
+          </div>
+
+          <div id="price_right">
+            <h3>mo</h3>
+          </div>
+
+        </div>
+        <!-- end of price -->
+        <!-- ### Item 3 ###   -->
+        <div id="inc_features">
+          <h5>INCLUDED FEATURES</h5>
+        </div>
+      </div>
+      <!-- end of top_white_sheet -->
+      <!-- end of 3 items -->
+      <!-- ##### bottom of section  containing 5 rows of icons ##### -->
+      <div class="matrix_1">
+
+        <div class="icon_row">
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/session_playback.jpeg" alt="SESSION PLAYBACK icon">
+            </div>
+            <div class="icon_text">
+              <p>SESSION PLAYBACK</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/omnisearch.jpeg" alt="OMNISEARCH icon">
+            </div>
+            <div class="icon_text">
+              <p>OMNISEARCH</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/searchies.jpeg" alt="SEARCHIES icon">
+            </div>
+            <div class="icon_text">
+              <p>SEARCHIES</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/identify_api.jpeg" alt="IDENTIFY API icon">
+            </div>
+            <div class="icon_text">
+              <p>IDENTIFY API</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of matrix row -->
+
+        <div class="icon_row">
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/custom_user_atts.jpeg" alt="CUSTOM USER ATTRIBUTES icon">
+            </div>
+            <div class="icon_text">
+              <p>CUSTOM USER ATTRIBUTES</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/rage_clicks.jpeg" alt="RAGE CLICKS icon">
+            </div>
+            <div class="icon_text">
+              <p>RAGE CLICKS</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/dead_clicks.jpeg" alt="DEAD CLICKS icon">
+            </div>
+            <div class="icon_text">
+              <p>DEAD CLICKS</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/integrations.jpeg" alt="INTEGRATIONS icon">
+            </div>
+            <div class="icon_text">
+              <p>INTEGRATIONS</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of matrix row -->
+
+        <div class="icon_row">
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/fullstory_tv.jpeg" alt="FULLSTORY TV icon">
+            </div>
+            <div class="icon_text">
+              <p>FULLSTORY TV</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/session_sharing.jpeg" alt="SESSION SHARIN icon">
+            </div>
+            <div class="icon_text">
+              <p>SESSION SHARING</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/inspect_mode.jpeg" alt="INSPECT MODE icon">
+            </div>
+            <div class="icon_text">
+              <p>INSPECT MODE</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/click_maps.jpeg" alt="CLICK MAPS icon">
+            </div>
+            <div class="icon_text">
+              <p>CLICK MAPS</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of matrix row -->
+
+        <div class="icon_row">
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/domain_ip_etc.jpeg" alt="DOMAIN, IP, GEOGRAPHY & USER AGENT BLOCKING icon">
+            </div>
+            <div class="icon_text">
+              <p>DOMAIN, IP, GEOGRAPHY & USER AGENT BLOCKING</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/error_clicks.jpeg" alt="ERROR CLICKS icon">
+            </div>
+            <div class="icon_text">
+              <p>ERROR CLICKS</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/js_console.jpeg" alt="JAVASCRIPT CONSOLE icon">
+            </div>
+            <div class="icon_text">
+              <p>JAVASCRIPT CONSOLE</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/go_live.jpeg" alt="GO LIVE icon">
+            </div>
+            <div class="icon_text">
+              <p>GO LIVE</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of matrix row -->
+
+        <div class="icon_row">
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/reflection_api.jpeg" alt="REFLECTION API icon">
+            </div>
+            <div class="icon_text">
+              <p>REFLECTION API</p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/export_user_csv.jpeg" alt="EXPORT USER CSV icon">
+            </div>
+            <div class="icon_text">
+              <p>EXPORT USER CSV</p>
+            </div>
+          </div>
+
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/hidden.jpeg" alt="hidden icon">
+            </div>
+            <div class="icon_text">
+              <p> </p>
+            </div>
+          </div>
+
+          <div class="icon_pic_n_text">
+            <div class="icon_pic">
+              <img src="assets/images/hidden.jpeg" alt="hidden icon">
+            </div>
+            <div class="icon_text">
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <!-- end of matrix row -->
+
+      </div>
+      <!-- End of white_sheet -->
+    </div>
+  </section>
+
+  <!-- ################ Styled with _section_heading.scss ################ -->
+  <section class="section_heading">
+    <h2>Extend FullStory Pro with additional feature packs</h2>
+  </section>
+  <!-- ################ Styled with _section_left_right.scss ################ -->
+  <!-- <section>
+    <div class="left_right_div">
+
+      <div class="left_div">
+        <h3>Page Insights Pack</h3>
+        <h3><span>FROM</span> +$99 <span>mo</span></h3>
+        <p>Know precisely where your customers are struggling with Click Maps for customer rage events, JavaScript errors, and dead clicks.</p>
+      </div>
+
+      <div class="right_div">
+
+        <div class="icon_pic_n_text">
+          <div class="icon_pic">
+            <img src="assets/images/icon" alt="RAGE CLICKS icon">
+          </div>
+          <div class="icon_text">
+            <p>RAGE CLICKS</p>
+          </div>
+        </div>
+
+        <div class="icon_pic_n_text">
+          <div class="icon_pic">
+            <img src="assets/images/icon" alt="DATA EXPORT API icon">
+          </div>
+          <div class="icon_text">
+            <p>DATA EXPORT API</p>
+          </div>
+        </div>
+
+        <div class="icon_pic_n_text">
+          <div class="icon_pic">
+            <img src="assets/images/icon" alt="DEAD CLICKS icon">
+          </div>
+          <div class="icon_text">
+            <p>DEAD CLICKS</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+  <!-- ################ Styled with _section_left_right.scss ################ -->
+  <!-- <section>
+    <div class="left_right_div">
+
+      <div class="left_div">
+        <h3>Data Export Pack</h3>
+        <h3><span>FROM</span> +$199 <span>mo</span></h3>
+        <p>Let your analysts discover the raw power of FullStory with a JSON extract of user and page events.</p>
+      </div>
+
+      <div class="right_div">
+
+        <div class="icon_pic_n_text">
+          <div class="icon_pic">
+            <img src="assets/images/icon" alt="DATA EXPORT  icon">
+          </div>
+          <div class="icon_text">
+            <p>DATA EXPORT</p>
+          </div>
+        </div>
+
+        <div class="icon_pic_n_text">
+          <div class="icon_pic">
+            <img src="assets/images/icon" alt="ERROR CLICK MAPS icon">
+          </div>
+          <div class="icon_text">
+            <p>ERROR CLICK MAPS</p>
+          </div>
+        </div>
+
+        <div class="icon_pic_n_text">
+          <div class="icon_pic">
+            <img src="assets/images/icon" alt="hidden icon">
+          </div>
+          <div class="icon_text">
+            <p>hidden</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+  <!-- ################ Styled with _section_heading.scss ################ -->
+  <section class="section_heading">
+    <h2>Frequently Asked Questions</h2>
+    <h4>Some of our most common questions are answered below.</h4>
+  </section>
+
+  <!-- ################ Styled with _section_left_right.scss ################ -->
+  <section>
+    <div id="card_table">
+
+      <div class="card_col">
+        <div class="card">
+          <h2>Can I try FullStory before I buy?</h2>
+          <p>You sure can — your first 14 days come fully loaded with all our Professional Edition has to offer. Once your trial is over you’ll have the option to keep rolling with a monthly subscription or go Free. Trials are limited to 5,000 monthly sessions.</p>
+        </div>
+        <div class="card">
+          <h2>How do I figure out how many sessions I need?</h2>
+          <p>Unlike individual page views, sessions comprise all of a user’s activity over the course of their visit. You can find your monthly session count in most analytics apps, such as Google Analytics.</p>
+        </div>
+        <div class="card">
+          <h2>What happens to my data after the retention period?</h2>
+          <p>It’s gone. Like, gone gone. Sessions are deleted as they reach the age specified in your subscription plan, so if you need to keep them for longer, please adjust your plan before they expire!</p>
+        </div>
+      </div>
+
+      <div class="card_col">
+        <div class="card">
+          <h2>How easy is it to get FullStory up and running on my site?</h2>
+          <p>Quite easy, actually. Most folks can get it running in about ten minutes. As opposed to other event-based solutions, a single script is all that’s required to copy and paste into your site. If your engineering team so much as flinches at the
+            task, we owe you one. If you use Segment or Google Tag Manager, installation is as easy as a single click during on-boarding.</p>
+        </div>
+        <div class="card">
+          <h2>What is a seat?</h2>
+          <p>Seats are occupied by individual users on your team who have access to your FullStory account, each with their own username and password. Every FullStory edition includes a certain number of seats, but Professional and Enterprise teams may purchase
+            extras if needed.</p>
+        </div>
+        <div class="card">
+          <h2>What's your cancellation policy?</h2>
+          <p>Our goal is to make you happy. You can cancel at any time and won't be billed for subsequent months. No hard feelings.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>

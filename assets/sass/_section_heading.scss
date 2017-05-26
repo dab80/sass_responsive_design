@@ -1,0 +1,31 @@
+
+.section_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // align-content: center;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  text-align: center;
+
+  h2 {
+    font-size: 48px;
+    color: DodgerBlue;
+    font-weight: 800;
+    font-family: $font_tiempos;
+    // font-family: "Tiempos", Plantin, "Galaxie CopernicusGeorgia", serif;
+  }
+
+  h4 {
+    font-size: 24px;
+    color: #606060;
+    font-weight: 200;
+    font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+    // font-family: $font_whitney;
+    margin-top: -20px;
+
+  }
+}

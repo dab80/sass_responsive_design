@@ -1,0 +1,255 @@
+header {
+  box-sizing: border-box;
+  height: 560px;
+  background-image: linear-gradient(to bottom left, #438ee1, #973999, #e35f61); }
+  header #masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    line-height: 100px;
+    padding-left: 10px;
+    padding-right: 20px; }
+    header #masthead a {
+      color: white;
+      text-decoration: none; }
+    header #masthead #logo a {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      font-weight: 200; }
+    header #masthead #nav_bar {
+      width: 450px; }
+      header #masthead #nav_bar #nav_list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        header #masthead #nav_bar #nav_list a {
+          font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          font-weight: 300px; }
+  header h1 {
+    color: white;
+    font-family: "Tiempos", Georgia, serif;
+    font-size: 40px;
+    font-weight: 800; }
+  header h2 {
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+    font-size: 24px;
+    font-weight: lighter; }
+  header h3 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: lighter; }
+  header #hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header #hero_content #hero_top_1 {
+      margin-top: 50px; }
+    header #hero_content #hero_bottom {
+      position: relative;
+      top: 20px; }
+    header #hero_content #email_input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 500px; }
+      header #hero_content #email_input input {
+        padding: 10px 30px;
+        border: 0;
+        outline: none;
+        box-sizing: border-box;
+        border-style: none;
+        font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 500; }
+      header #hero_content #email_input input[type=text] {
+        border-radius: 100px 0 0 100px;
+        width: 77%;
+        padding-left: -10px;
+        margin: 12px 0;
+        color: Gainsboro; }
+      header #hero_content #email_input input[type=submit] {
+        border-radius: 0 100px 100px 0;
+        width: 23%;
+        background-color: DodgerBlue;
+        padding-left: -10px;
+        margin: 12px 0;
+        color: white; }
+
+.section_1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .section_1 h1 {
+    font-size: 56px;
+    color: DodgerBlue;
+    font-weight: 800;
+    font-family: "Tiempos", Plantin, "Galaxie CopernicusGeorgia", serif;
+    border-bottom: 1px dashed DodgerBlue; }
+  .section_1 h2 {
+    font-size: 16px; }
+  .section_1 h3 {
+    font-size: 18px;
+    color: DodgerBlue;
+    font-weight: 800;
+    font-family: "Tiempos", Plantin, "Galaxie CopernicusGeorgia", serif; }
+  .section_1 h5 {
+    font-size: 14px;
+    color: gray; }
+  .section_1 #white_sheet {
+    margin: -65px;
+    background-color: white;
+    width: 880px;
+    height: 1080px;
+    border-style: solid;
+    border: 0.5px;
+    border-radius: 4px; }
+    .section_1 #white_sheet #tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 100px; }
+      .section_1 #white_sheet #tabs div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 200px;
+        border-color: #438ee1;
+        border-style: solid;
+        border-width: 2px; }
+      .section_1 #white_sheet #tabs .outer_left {
+        color: lightblue;
+        border-radius: 4px 0 0 4px; }
+      .section_1 #white_sheet #tabs .outer_right {
+        color: lightblue;
+        border-radius: 0 4px 4px 0; }
+      .section_1 #white_sheet #tabs #inner_tab {
+        color: white;
+        background-color: DodgerBlue; }
+    .section_1 #white_sheet #price {
+      display: flex;
+      justify-content: center;
+      flex-direction: row; }
+      .section_1 #white_sheet #price #price_left {
+        color: gray; }
+        .section_1 #white_sheet #price #price_left h5 {
+          position: relative;
+          top: 70px;
+          left: -10px; }
+      .section_1 #white_sheet #price #price_right h3 {
+        position: relative;
+        top: 30px;
+        left: 5px; }
+    .section_1 #white_sheet #inc_features {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .section_1 #white_sheet .matrix_1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .section_1 #white_sheet .matrix_1 p {
+        font-size: 13px;
+        color: gray; }
+    .section_1 #white_sheet .icon_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 800px; }
+    @media (max-width: 800px) {
+      .section_1 #white_sheet .icon_row {
+        width: 400px; } }
+    .section_1 #white_sheet .icon_pic_n_text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 150px; }
+    .section_1 #white_sheet .icon_pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px; }
+  @media (max-width: 800px) {
+    .section_1 #white_sheet {
+      width: 480px; } }
+
+.section_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center; }
+  .section_heading h2 {
+    font-size: 48px;
+    color: DodgerBlue;
+    font-weight: 800;
+    font-family: "Tiempos", Plantin, "Galaxie CopernicusGeorgia", serif; }
+  .section_heading h4 {
+    font-size: 24px;
+    color: #606060;
+    font-weight: 200;
+    font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+    margin-top: -20px; }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section #card_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; }
+    section #card_table h2 {
+      font-size: 24px;
+      color: DodgerBlue;
+      font-weight: 600;
+      font-family: "Tiempos", Plantin, "Galaxie CopernicusGeorgia", serif;
+      margin-bottom: 25px; }
+    section #card_table p {
+      font-size: 16px;
+      color: #606060;
+      font-weight: 200;
+      font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+      margin-top: -20px; }
+    section #card_table .card_col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      padding-right: 10px;
+      margin-bottom: 15px; }
+      section #card_table .card_col .card {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 20px;
+        background-color: white; }
+
+* {
+  box-sizing: border-box;
+  margin-top: -100; }
+
+body {
+  font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 0; }
+
+/*# sourceMappingURL=common.css.map */
